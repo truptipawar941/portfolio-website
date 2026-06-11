@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trupti Pawar | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#020617;
+    color:white;
+}
+
+a{
+    text-decoration:none;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(2,6,23,0.85);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    
+    min-height:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:180px 20px 50px;
+}
+
+
+.profile-img{
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #38bdf8;
+    box-shadow:0 0 25px rgba(56,189,248,.5);
+}
+
+.hero h1{
+    margin-top:20px;
+    font-size:42px;
+}
+
+.typing{
+    color:#38bdf8;
+    font-size:24px;
+    margin-top:10px;
+    min-height:35px;
+    font-weight:600;
+}
+
+.hero p{
+    max-width:700px;
+    margin-top:15px;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#38bdf8;
+    color:#000;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:600;
+    border:none;
+    cursor:pointer;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.glass{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:18px;
+    backdrop-filter:blur(12px);
+    padding:25px;
+}
+
+.about{
+    text-align:center;
+    line-height:1.8;
+}
+
+.resume-grid,
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.resume-card h3,
+.project-card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.resume-card ul{
+    padding-left:20px;
+    margin-top:10px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.skills span{
+    background:#0f172a;
+    border:1px solid #38bdf8;
+    padding:10px 15px;
+    border-radius:30px;
+}
+
+.project-card p{
+    color:#cbd5e1;
+    margin-top:10px;
+}
+
+.tags{
+    margin-top:15px;
+}
+
+.tags span{
+    display:inline-block;
+    margin:4px;
+    background:#0f172a;
+    padding:6px 10px;
+    border-radius:15px;
+    font-size:12px;
+}
+
+.project-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 15px;
+    background:#38bdf8;
+    color:black;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.contact-box{
+    text-align:center;
+    line-height:2;
+}
+
+.contact-box a{
+    color:#38bdf8;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#01040f;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .typing{
+        font-size:20px;
+    }
+
+    section{
+        padding:80px 20px;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Trupti Pawar</div>
+
+    <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+
+    <img src="./profile.jpg" alt="Trupti Pawar" class="profile-img">
+
+    <h1>Trupti Pawar</h1>
+
+    <div class="typing" id="typing"></div>
+
+    <p>
+      
+    IoT Enthusiast | Web Developer | Data Analyst
+
+    </p>
+
+</section>
+
+<section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="glass about">
+        I am a Third Year Engineering student from Brahmdevdada Mane Institute of Technology, Solapur.
+        I enjoy building IoT solutions, developing modern websites and analyzing data using Python and Power BI.
+        My goal is to create technology solutions that solve real-world problems.
+    </div>
+
+</section>
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="glass">
+        <h3>Bachelor of Technology (B.Tech)</h3>
+        <p>Brahmdevdada Mane Institute of Technology, Solapur</p>
+        <p>CGPA: 9.5</p>
+        <p>Completed Third Year | Expected Graduation: 2027</p>
+    </div>
+</section>
+
+
+<section id="resume">
+
+    <h2 class="section-title">Resume</h2>
+
+    <div class="resume-grid">
+
+        <div class="glass resume-card">
+
+            <h3>📡 IoT Resume</h3>
+
+            <p>
+                Focused on IoT systems, Firebase integration and smart automation projects.
+            </p>
+
+            <ul>
+                <li>Smart Vehicle Parking System</li>
+                <li>Firebase Realtime Database</li>
+                <li>IoT Based Solutions</li>
+            </ul>
+
+            <a href="./iot_resume.pdf" target="_blank" class="btn">
+    View IoT Resume
+</a>
+        
+
+        </div>
+
+        <div class="glass resume-card">
+
+            <h3>💻 Web + Data Analysis Resume</h3>
+
+            <p>
+                Focused on Web Development, Python, Power BI and Data Analytics.
+            </p>
+
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Amazon Sales Analysis</li>
+                <li>Power BI Dashboards</li>
+            </ul>
+
+           <a href="./web_data_resume.pdf"
+   target="_blank"
+   class="btn">
+   View Web + Data Resume
+</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="skills">
+
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+
+        <span>IoT</span>
+        <span>Firebase</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>Power BI</span>
+        <span>Data Analysis</span>
+        <span>Java</span>
+        <span>Git & GitHub</span>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="glass project-card">
+
+            <h3>Smart Vehicle Parking System</h3>
+
+            <p>
+                IoT and Firebase based real-time parking slot monitoring system.
+            </p>
+
+            <div class="tags">
+                <span>IoT</span>
+                <span>Firebase</span>
+                <span>HTML</span>
+                <span>JavaScript</span>
+            </div>
+
+            <a class="project-btn"
+            href="https://github.com/truptipawar941/smart-vehicle-parking-system"
+            target="_blank">
+            View Project
+            </a>
+            <a class="project-btn"
+             href=" https://smartparking-1803.web.app"
+            target="_blank">
+            Live Demo
+            </a>
+
+        </div>
+
+        <div class="glass project-card">
+
+            <h3>Amazon Sales Data Analysis</h3>
+
+            <p>
+                Python based sales analysis and data visualization project.
+            </p>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Power BI</span>
+            </div>
+
+            <a class="project-btn"
+            href="https://github.com/truptipawar941/amazon-sales-analysis"
+            target="_blank">
+            View Project
+            </a>
+
+        </div>
+
+        <div class="glass project-card">
+
+            <h3>Snake Game</h3>
+
+            <p>
+                Classic Snake Game developed using Python.
+            </p>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>Game Development</span>
+            </div>
+
+            <a class="project-btn"
+            href="https://github.com/truptipawar941/snake-game"
+            target="_blank">
+            View Project
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Achievements Section -->
+
+<section id="achievements">
+
+    <h2 class="section-title">Achievements</h2>
+
+    <div class="glass">
+
+        <ul>
+            <li>🏆 Participated in UI/UX Design Competition at College Level</li>
+            <li>🚗 Developed Smart Vehicle Parking System using IoT and Firebase</li>
+            <li>📊 Built Data Analysis Projects using Python and Power BI</li>
+        </ul>
+
+    </div>
+
+</section>
+<section id="contact">
+
+    <h2 class="section-title">Contact</h2>
+
+    <div class="glass contact-box">
+
+        <p>📧 Email:
+            <a href="mailto:truptipawar302@gmail.com">
+                truptipawar302@gmail.com
+            </a>
+        </p>
+
+        <p>📱 Phone:
+            <a href="tel:+917498875709">
+                +91 7498875709
+            </a>
+        </p>
+
+        <p>💻 GitHub:
+            <a href="https://github.com/truptipawar941" target="_blank">
+                github.com/truptipawar941
+            </a>
+        </p>
+
+        <p>🔗 LinkedIn:
+            <a href="https://linkedin.com/in/trupti-pawar-5315b4404" target="_blank">
+                linkedin.com/in/trupti-pawar-5315b4404
+            </a>
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Trupti Pawar | Portfolio
+</footer>
+
+<script>
+const roles = [
+    "IoT Developer",
+    "Web Developer",
+    "Data Analyst"
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function typeEffect() {
+
+    const currentRole = roles[roleIndex];
+    const typing = document.getElementById("typing");
+
+    if(!deleting){
+        typing.textContent =
+        currentRole.substring(0,charIndex+1);
+
+        charIndex++;
+
+        if(charIndex === currentRole.length){
+            deleting = true;
+
+            setTimeout(typeEffect,1500);
+            return;
+        }
+
+    }else{
+
+        typing.textContent =
+        currentRole.substring(0,charIndex-1);
+
+        charIndex--;
+
+        if(charIndex === 0){
+            deleting = false;
+            roleIndex =
+            (roleIndex + 1) % roles.length;
+        }
+    }
+
+    setTimeout(typeEffect, deleting ? 60 : 120);
+}
+
+typeEffect();
+</script>
+
+</body>
+</html>
