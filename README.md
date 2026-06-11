@@ -110,7 +110,7 @@ https://linkedin.com/in/trupti-pawar-5315b4404
 ## 🌍 Live Portfolio
 
 Portfolio Website:
-(Add GitHub Pages URL here after deployment)
+https://truptipawar941.github.io/portfolio-website/
 
 ---
 
