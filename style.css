@@ -35,17 +35,8 @@ nav ul{
     color:#38bdf8;
     margin-bottom:10px;
 }
-.project-card{
-    transition:0.3s;
-}
 
-.project-card:hover{
-    transform:translateY(-5px);
-}
 
-.project-btn:hover{
-    opacity:0.9;
-} 
 /* PROJECT SECTION */
 
 .project-grid{
