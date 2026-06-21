@@ -45,7 +45,8 @@ nav ul{
 
 .project-btn:hover{
     opacity:0.9;
-} /* PROJECT SECTION */
+} 
+/* PROJECT SECTION */
 
 .project-grid{
     display:grid;
