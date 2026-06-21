@@ -45,4 +45,76 @@ nav ul{
 
 .project-btn:hover{
     opacity:0.9;
+} /* PROJECT SECTION */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-top:20px;
+}
+
+.project-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:18px;
+    padding:25px;
+    transition:0.3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    border:1px solid #38bdf8;
+    box-shadow:0 10px 25px rgba(56,189,248,0.25);
+}
+
+.project-card h3{
+    color:#38bdf8;
+    margin-bottom:12px;
+}
+
+.project-card p{
+    color:#cbd5e1;
+    line-height:1.6;
+}
+
+.tags{
+    margin-top:15px;
+}
+
+.tags span{
+    display:inline-block;
+    margin:4px;
+    padding:6px 12px;
+    background:#0f172a;
+    border:1px solid #38bdf8;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.project-btn{
+    display:inline-block;
+    margin-top:15px;
+    margin-right:10px;
+    padding:10px 16px;
+    background:#38bdf8;
+    color:black;
+    border-radius:8px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.project-btn:hover{
+    transform:translateY(-2px);
+    opacity:0.9;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
 }
