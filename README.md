@@ -1,117 +1,176 @@
-# 🌐 Trupti Pawar Portfolio
+# 🌐 Trupti Pawar | Personal Portfolio
 
-Welcome to my personal portfolio website showcasing my projects, skills, achievements, and professional profiles.
+Welcome to my personal portfolio website! This portfolio showcases my projects, internship experience, technical skills, certifications, and achievements in UI/UX Design, Web Development, IoT, and Data Analytics.
 
 ## 👩‍💻 About Me
 
-I am a B.Tech student at Brahmdevdada Mane Institute of Technology, Solapur, with a CGPA of 9.5.
+Hello! I'm Trupti Pawar, a Third Year B.Tech student at Brahmdevdada Mane Institute of Technology, Solapur, currently working as a UI/UX Design Intern at Infotact Solutions.
 
-I am passionate about:
-
-- IoT Development
-- Web Development
-- Data Analytics
-- Python Programming
-- Firebase
-- Power BI
-
-I enjoy building real-world technology solutions and continuously improving my technical skills.
+I enjoy designing user-friendly digital experiences, building web applications, developing IoT solutions, and analyzing data to solve real-world problems.
 
 ---
 
-## 🚀 Featured Projects
+ 🌐 Live Portfolio
 
-### 🚗 Smart Vehicle Parking System
+**Portfolio Website**
 
-An IoT and Firebase-based smart parking solution that provides real-time parking slot monitoring and vehicle management.
-
-**Technologies Used:**
-
-- IoT
-- Firebase Realtime Database
-- HTML
-- CSS
-- JavaScript
-
-🔗 Live Demo:
-https://smartparking-1803.web.app
-
----
-
-### 📊 Amazon Sales Data Analysis
-
-A data analytics project focused on extracting insights from Amazon sales data using Python and visualization techniques.
-
-**Technologies Used:**
-
-- Python
-- Pandas
-- NumPy
-- Power BI
-
----
-
-### 🐍 Snake Game
-
-A classic Snake Game developed using Python.
-
-**Technologies Used:**
-
-- Python
-
----
-
-## 🛠 Skills
-
-- IoT
-- Firebase
-- HTML
-- CSS
-- JavaScript
-- Python
-- Power BI
-- Data Analysis
-- Java
-- Git & GitHub
-
----
-
-## 🏆 Achievements
-
-- Participated in UI/UX Design Competition at College Level
-- Developed Smart Vehicle Parking System using IoT and Firebase
-- Built Data Analysis Projects using Python and Power BI
-
----
-
-## 📄 Resume
-
-This portfolio includes:
-
-- IoT Resume
-- Web Development & Data Analytics Resume
-
----
-
-## 📫 Contact
-
-📧 Email: truptipawar302@gmail.com
-
-📱 Phone: +91 7498875709
-
-💻 GitHub:
-https://github.com/truptipawar941
-
-🔗 LinkedIn:
-https://linkedin.com/in/trupti-pawar-5315b4404
-
----
-
-## 🌍 Live Portfolio
-
-Portfolio Website:
 https://truptipawar941.github.io/portfolio-website/
 
 ---
 
-⭐ If you like this portfolio, feel free to explore my repositories and projects.
+## 📸 Portfolio Preview
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/3dee34ea-3470-4832-bc1e-7d6cf3dce241" />
+
+
+
+# 💼 Internship Experience
+
+### UI/UX Design Intern | Infotact Solutions
+
+* Designing user-friendly interfaces using Figma
+* Creating wireframes and interactive prototypes
+* Improving user experience through design thinking
+* Working on real-world UI/UX projects
+
+---
+
+# 🚀 Featured Projects
+
+## 🚗 Smart Vehicle Parking System
+
+An IoT-based Smart Parking System with Firebase integration for real-time parking slot monitoring and management.
+
+### Technologies
+
+* IoT
+* Firebase
+* HTML
+* CSS
+* JavaScript
+
+### Live Demo
+
+https://smartparking-1803.web.app
+
+---
+
+## 🎨 Smart Parking UI/UX Case Study
+
+A complete UI/UX case study for a Smart Parking application including:
+
+* User Research
+* User Persona
+* User Flow
+* Wireframes
+* High-Fidelity UI
+* Interactive Prototype
+
+**Tools**
+
+* Figma
+
+---
+
+## 🍔 Food App UI/UX Design
+
+Designed a modern food ordering mobile application using Figma with interactive prototypes and a user-centered design approach.
+
+**Tools**
+
+* Figma
+* UI Design
+* Wireframing
+* Prototyping
+
+---
+
+## 📊 Amazon Sales Data Analysis
+
+Performed data cleaning, analysis, and visualization using Python and Power BI to generate meaningful business insights.
+
+### Technologies
+
+* Python
+* Pandas
+* NumPy
+* Power BI
+
+---
+
+# 🛠 Technical Skills
+
+### Programming
+
+* Python
+* Java
+* HTML
+* CSS
+* JavaScript
+* SQL
+
+### Data Analytics
+
+* Power BI
+* Pandas
+* Excel
+* Data Visualization
+
+### UI/UX
+
+* Figma
+* Wireframing
+* Prototyping
+* User Research
+* Design Thinking
+
+### Tools
+
+* Git
+* GitHub
+* Firebase
+
+---
+
+# 📜 Certifications
+
+* UI/UX Design Assessment (**Score: 45/50**)
+* Python Workshop – DV Analytics
+
+---
+
+# 🏆 Achievements
+
+* UI/UX Design Intern at Infotact Solutions
+* Developed Smart Vehicle Parking System using IoT and Firebase
+* Designed UI/UX Case Studies in Figma
+* Built Data Analytics projects using Python and Power BI
+* Participated in College Level UI/UX Design Competition
+
+---
+
+# 📄 Resume
+
+This portfolio includes:
+
+* IoT Resume
+* Web Development & Data Analytics Resume
+
+---
+
+# 📫 Contact
+
+**Email**
+
+[truptipawar302@gmail.com](mailto:truptipawar302@gmail.com)
+
+**GitHub**
+
+https://github.com/truptipawar941
+
+**LinkedIn**
+
+https://linkedin.com/in/trupti-pawar-5315b4404
+
+---
+
+⭐ Thank you for visiting my portfolio! Feel free to explore my projects and connect with me on GitHub or LinkedIn.
