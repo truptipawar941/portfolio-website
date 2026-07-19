@@ -135,6 +135,8 @@ Performed data cleaning, analysis, and visualization using Python and Power BI t
 
 * UI/UX Design Assessment (**Score: 45/50**)
 * Python Workshop – DV Analytics
+* Excel Certificate-DV Analytics
+* SQL Certificate-DV Analytics
 
 ---
 
