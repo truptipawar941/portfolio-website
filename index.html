@@ -1,328 +1,1315 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trupti Pawar | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Trupti Pawar | Data Analyst & UI/UX Designer</title>
 
-<style>
+    <meta name="description"
+          content="Trupti Pawar - Data Analyst and UI/UX Designer portfolio featuring data analytics, Power BI, SQL, Python, Figma and design projects.">
 
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
 
-html{
-    scroll-behavior:smooth;
-}
+    <style>
 
-body{
-    background:#020617;
-    color:white;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-a{
-    text-decoration:none;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-nav{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    padding:18px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:rgba(2,6,23,0.85);
-    backdrop-filter:blur(10px);
-    z-index:1000;
-}
+        body {
+            background: #020617;
+            color: white;
+            line-height: 1.6;
+        }
 
-.logo{
-    font-size:24px;
-    font-weight:700;
-    color:#38bdf8;
-}
+        a {
+            text-decoration: none;
+        }
 
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:25px;
-}
+        /* ================= NAVBAR ================= */
 
-nav ul li a{
-    color:white;
-    transition:.3s;
-}
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 16px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(2, 6, 23, 0.88);
+            backdrop-filter: blur(12px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
 
-nav ul li a:hover{
-    color:#38bdf8;
-}
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #38bdf8;
+            white-space: nowrap;
+        }
 
-.hero{
-    
-    min-height:auto;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:180px 20px 50px;
-}
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 22px;
+            align-items: center;
+        }
 
+        nav ul li a {
+            color: #e2e8f0;
+            font-size: 14px;
+            transition: 0.3s;
+        }
 
-.profile-img{
-    width:260px;
-    height:260px;
-    border-radius:50%;
-    object-fit:cover;
-    border:4px solid #38bdf8;
-    box-shadow:0 0 25px rgba(56,189,248,.5);
-}
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
 
-.hero h1{
-    margin-top:20px;
-    font-size:42px;
-}
+        /* ================= HERO ================= */
 
-.typing{
-    color:#38bdf8;
-    font-size:24px;
-    margin-top:10px;
-    min-height:35px;
-    font-weight:600;
-}
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 150px 20px 80px;
+        }
 
-.hero p{
-    max-width:700px;
-    margin-top:15px;
-    color:#cbd5e1;
-}
+        .profile-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #38bdf8;
+            box-shadow: 0 0 30px rgba(56,189,248,.35);
+        }
 
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    background:#38bdf8;
-    color:#000;
-    padding:12px 22px;
-    border-radius:10px;
-    font-weight:600;
-    border:none;
-    cursor:pointer;
-}
+        .hero h1 {
+            margin-top: 24px;
+            font-size: 48px;
+            font-weight: 700;
+        }
 
-section{
-    padding:90px 8%;
-}
+        .typing {
+            color: #38bdf8;
+            font-size: 25px;
+            margin-top: 8px;
+            min-height: 38px;
+            font-weight: 600;
+        }
 
-.section-title{
-    text-align:center;
-    font-size:36px;
-    margin-bottom:40px;
-    color:#38bdf8;
-}
+        .hero p {
+            max-width: 720px;
+            margin-top: 18px;
+            color: #cbd5e1;
+            font-size: 16px;
+        }
 
-.glass{
-    background:rgba(255,255,255,0.05);
-    border:1px solid rgba(255,255,255,0.1);
-    border-radius:18px;
-    backdrop-filter:blur(12px);
-    padding:25px;
-}
+        .hero-buttons {
+            margin-top: 25px;
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-.about{
-    text-align:center;
-    line-height:1.8;
-}
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: #020617;
+            padding: 11px 22px;
+            border-radius: 10px;
+            font-weight: 600;
+            border: 1px solid #38bdf8;
+            cursor: pointer;
+            transition: 0.3s;
+        }
 
-.resume-grid,
-.project-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
-}
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(56,189,248,.25);
+        }
 
-.resume-card h3,
-.project-card h3{
-    color:#38bdf8;
-    margin-bottom:10px;
-}
+        .btn-outline {
+            display: inline-block;
+            background: transparent;
+            color: #38bdf8;
+            padding: 11px 22px;
+            border-radius: 10px;
+            font-weight: 600;
+            border: 1px solid #38bdf8;
+            transition: 0.3s;
+        }
 
-.resume-card ul{
-    padding-left:20px;
-    margin-top:10px;
-}
+        .btn-outline:hover {
+            background: #38bdf8;
+            color: #020617;
+        }
 
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:12px;
-}
+        /* ================= SECTIONS ================= */
 
-.skills span{
-    background:#0f172a;
-    border:1px solid #38bdf8;
-    padding:10px 15px;
-    border-radius:30px;
-}
+        section {
+            padding: 90px 8%;
+            scroll-margin-top: 80px;
+        }
 
-.project-card p{
-    color:#cbd5e1;
-    margin-top:10px;
-}
+        .section-title {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 45px;
+            color: #38bdf8;
+        }
 
-.tags{
-    margin-top:15px;
-}
+        .glass {
+            background: rgba(255,255,255,0.045);
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 18px;
+            backdrop-filter: blur(12px);
+            padding: 28px;
+        }
 
-.tags span{
-    display:inline-block;
-    margin:4px;
-    background:#0f172a;
-    padding:6px 10px;
-    border-radius:15px;
-    font-size:12px;
-}
+        .glass:hover {
+            border-color: rgba(56,189,248,.35);
+        }
 
-.project-btn{
-    display:inline-block;
-    margin-top:15px;
-    padding:10px 15px;
-    background:#38bdf8;
-    color:black;
-    border-radius:8px;
-    font-weight:600;
-}
+        /* ================= ABOUT ================= */
 
-.contact-box{
-    text-align:center;
-    line-height:2;
-}
+        .about-box {
+            max-width: 950px;
+            margin: auto;
+            text-align: center;
+            color: #cbd5e1;
+            line-height: 1.9;
+        }
 
-.contact-box a{
-    color:#38bdf8;
-}
+        .about-highlight {
+            color: #38bdf8;
+            font-weight: 600;
+        }
 
-footer{
-    text-align:center;
-    padding:25px;
-    background:#01040f;
-    color:#94a3b8;
-}
+        /* ================= EDUCATION ================= */
 
-@media(max-width:768px){
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 22px;
+        }
 
-    nav{
-        flex-direction:column;
-        gap:10px;
-    }
+        .education-card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
 
-    nav ul{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
+        .education-card p {
+            color: #cbd5e1;
+            margin: 5px 0;
+        }
 
-    .hero h1{
-        font-size:38px;
-    }
+        /* ================= EXPERIENCE ================= */
 
-    .typing{
-        font-size:20px;
-    }
+        .experience-card {
+            max-width: 900px;
+            margin: auto;
+        }
 
-    section{
-        padding:80px 20px;
-    }
-}
-</style>
+        .experience-card h3 {
+            color: #38bdf8;
+            font-size: 23px;
+        }
+
+        .experience-company {
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .experience-date {
+            color: #94a3b8;
+            margin-bottom: 15px;
+        }
+
+        .experience-card ul {
+            padding-left: 22px;
+            color: #cbd5e1;
+        }
+
+        .experience-card li {
+            margin: 7px 0;
+        }
+
+        /* ================= RESUME ================= */
+
+        .resume-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .resume-card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .resume-card p {
+            color: #cbd5e1;
+        }
+
+        .resume-card ul {
+            padding-left: 20px;
+            margin: 15px 0;
+            color: #cbd5e1;
+        }
+
+        /* ================= SKILLS ================= */
+
+        .skill-category {
+            max-width: 1050px;
+            margin: 0 auto 25px;
+        }
+
+        .skill-category h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+            font-size: 21px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 11px;
+        }
+
+        .skills span {
+            background: #0f172a;
+            border: 1px solid rgba(56,189,248,.45);
+            padding: 9px 15px;
+            border-radius: 30px;
+            color: #e2e8f0;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .skills span:hover {
+            background: #38bdf8;
+            color: #020617;
+            transform: translateY(-2px);
+        }
+
+        /* ================= PROJECTS ================= */
+
+        .project-intro {
+            text-align: center;
+            color: #94a3b8;
+            max-width: 750px;
+            margin: -20px auto 40px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .project-card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        .project-card p {
+            color: #cbd5e1;
+            font-size: 14px;
+            line-height: 1.75;
+        }
+
+        .project-type {
+            display: inline-block;
+            margin-bottom: 12px;
+            color: #7dd3fc;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .tags {
+            margin-top: 17px;
+            flex-grow: 1;
+        }
+
+        .tags span {
+            display: inline-block;
+            margin: 4px;
+            background: #0f172a;
+            padding: 6px 10px;
+            border-radius: 15px;
+            font-size: 11px;
+            color: #cbd5e1;
+        }
+
+        .project-buttons {
+            margin-top: 18px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .project-btn {
+            display: inline-block;
+            padding: 9px 13px;
+            background: #38bdf8;
+            color: #020617;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        .project-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .project-btn.secondary {
+            background: transparent;
+            color: #38bdf8;
+            border: 1px solid #38bdf8;
+        }
+
+        /* ================= CERTIFICATES ================= */
+
+        .certificate-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .certificate-card {
+            text-align: center;
+        }
+
+        .certificate-card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .certificate-img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,.1);
+            margin-bottom: 12px;
+        }
+
+        .certificate-card p {
+            color: #cbd5e1;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* ================= ACHIEVEMENTS ================= */
+
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .achievement-card {
+            text-align: center;
+        }
+
+        .achievement-icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .achievement-card h3 {
+            color: #38bdf8;
+            margin-bottom: 8px;
+        }
+
+        .achievement-card p {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        /* ================= CONTACT ================= */
+
+        .contact-box {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .contact-box p {
+            margin: 13px 0;
+            color: #cbd5e1;
+        }
+
+        .contact-box a {
+            color: #38bdf8;
+        }
+
+        .social-links {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #01040f;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media(max-width: 1000px) {
+
+            nav {
+                padding: 15px 4%;
+            }
+
+            nav ul {
+                gap: 13px;
+            }
+
+            nav ul li a {
+                font-size: 12px;
+            }
+        }
+
+        @media(max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+                padding: 14px 10px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px 15px;
+            }
+
+            .hero {
+                padding-top: 190px;
+            }
+
+            .profile-img {
+                width: 180px;
+                height: 180px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .typing {
+                font-size: 21px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            section {
+                padding: 75px 20px;
+            }
+
+            .section-title {
+                font-size: 29px;
+            }
+        }
+
+        @media(max-width: 480px) {
+
+            .hero h1 {
+                font-size: 31px;
+            }
+
+            .typing {
+                font-size: 18px;
+            }
+
+            .glass {
+                padding: 21px;
+            }
+
+            .project-grid,
+            .certificate-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+
+    </style>
 </head>
+
 <body>
 
+<!-- ================= NAVBAR ================= -->
+
 <nav>
+
     <div class="logo">Trupti Pawar</div>
 
     <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#resume">Resume</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#certificates">Certificates</a></li>
-    <li><a href="#achievements">Achievements</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
 </nav>
+
+
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
-    <img src="./profile.jpg" alt="Trupti Pawar" class="profile-img">
+    <img src="./profile.jpg"
+         alt="Trupti Pawar"
+         class="profile-img">
 
     <h1>Trupti Pawar</h1>
 
     <div class="typing" id="typing"></div>
 
-    
-      
     <p>
-     UI/UX Design Intern at Infotact Solutions | Web Developer | Data Analyst
+        Data-driven problem solver with a passion for analytics,
+        visualization, and creating intuitive digital experiences.
     </p>
 
-    
+    <div class="hero-buttons">
+
+        <a href="#projects" class="btn">
+            View Projects
+        </a>
+
+        <a href="#contact" class="btn-outline">
+            Let's Connect
+        </a>
+
+    </div>
 
 </section>
+
+
+<!-- ================= ABOUT ================= -->
 
 <section id="about">
 
     <h2 class="section-title">About Me</h2>
-    I am a Third Year Engineering student at Brahmdevdada Mane Institute of Technology, Solapur, currently working as a UI/UX Design Intern at Infotact Solutions. I am passionate about UI/UX Design, Web Development, and Data Analytics. I enjoy creating user-friendly digital experiences, designing interactive interfaces in Figma, and building technology solutions that solve real-world problems.
-</div>
 
+    <div class="glass about-box">
 
-    
-        
+        <p>
+            I am a Computer Engineering student at
+            <span class="about-highlight">
+                Brahmdevdada Mane Institute of Technology, Solapur
+            </span>,
+            graduating in 2027 with a current CGPA of
+            <span class="about-highlight">9.69</span>.
+        </p>
+
+        <br>
+
+        <p>
+            I am interested in
+            <span class="about-highlight">Data Analytics</span>
+            and
+            <span class="about-highlight">UI/UX Design</span>.
+            I enjoy working with SQL, Excel, Power BI and Python
+            to transform data into meaningful insights, while also
+            designing intuitive digital experiences using Figma.
+        </p>
+
+        <br>
+
+        <p>
+            I believe good solutions combine
+            <span class="about-highlight">
+                analytical thinking, creativity and user understanding.
+            </span>
+        </p>
+
+    </div>
 
 </section>
+
+
+<!-- ================= EDUCATION ================= -->
+
 <section id="education">
+
     <h2 class="section-title">Education</h2>
 
-    <div class="glass">
-        <h3>Bachelor of Technology (B.Tech)</h3>
-        <p>Brahmdevdada Mane Institute of Technology, Solapur</p>
-        <p>CGPA: 9.5</p>
-        <p>Completed Third Year | Expected Graduation: 2027</p>
+    <div class="education-grid">
+
+        <div class="glass education-card">
+
+            <h3>Bachelor of Technology</h3>
+
+            <p>
+                <strong>
+                    Brahmdevdada Mane Institute of Technology, Solapur
+                </strong>
+            </p>
+
+            <p>Computer Engineering</p>
+
+            <p>Current CGPA: <strong>9.69 / 10</strong></p>
+
+            <p>Expected Graduation: 2027</p>
+
+        </div>
+
+        <div class="glass education-card">
+
+            <h3>Higher Secondary Education</h3>
+
+            <p>
+                SSMB
+            </p>
+
+            <p>12th Percentage: 68.50%</p>
+
+        </div>
+
+        <div class="glass education-card">
+
+            <h3>Secondary Education</h3>
+
+            <p>
+                Tulshida Jadhav Prashala, Vairag
+            </p>
+
+            <p>10th Percentage: 94.20%</p>
+
+        </div>
+
     </div>
+
 </section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
 <section id="experience">
 
     <h2 class="section-title">Experience</h2>
 
-    <div class="glass">
+    <div class="glass experience-card">
 
         <h3>UI/UX Design Intern</h3>
 
-        <p><strong>Infotact Solutions</strong></p>
+        <p class="experience-company">
+            Infotact Solutions
+        </p>
 
-        <p>UI/UX Design Intern | Infotact Solutions</p>
-        <p>2026 - Present</p>
+        <p class="experience-date">
+            2026
+        </p>
 
         <ul>
-            <li>Creating user-friendly UI designs using Figma.</li>
-            <li>Designing wireframes and interactive prototypes.</li>
-            <li>Improving user experience through research and design thinking.</li>
-            <li>Collaborating on real-world design projects.</li>
+
+            <li>
+                Designed user interfaces and interactive prototypes using Figma.
+            </li>
+
+            <li>
+                Created wireframes and high-fidelity UI designs.
+            </li>
+
+            <li>
+                Applied user research and design thinking principles
+                to improve user experience.
+            </li>
+
+            <li>
+                Worked on practical UI/UX design tasks and project workflows.
+            </li>
+
         </ul>
 
     </div>
 
 </section>
 
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+    <h2 class="section-title">Skills</h2>
+
+
+    <div class="glass skill-category">
+
+        <h3>📊 Data Analytics</h3>
+
+        <div class="skills">
+
+            <span>SQL</span>
+            <span>MySQL</span>
+            <span>Excel</span>
+            <span>Power BI</span>
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Matplotlib</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="glass skill-category">
+
+        <h3>🎨 UI/UX Design</h3>
+
+        <div class="skills">
+
+            <span>Figma</span>
+            <span>Wireframing</span>
+            <span>Prototyping</span>
+            <span>User Research</span>
+            <span>Design Thinking</span>
+            <span>UI Design</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="glass skill-category">
+
+        <h3>💻 Web Development</h3>
+
+        <div class="skills">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Firebase</span>
+            <span>Git</span>
+            <span>GitHub</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="glass skill-category">
+
+        <h3>🤖 IoT & Embedded Systems</h3>
+
+        <div class="skills">
+
+            <span>ESP32</span>
+            <span>ESP8266</span>
+            <span>Arduino</span>
+            <span>Wokwi</span>
+            <span>IoT Automation</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+    <h2 class="section-title">Featured Projects</h2>
+
+    <p class="project-intro">
+        A collection of data analytics, UI/UX, web development,
+        and IoT projects focused on solving practical problems.
+    </p>
+
+
+    <div class="project-grid">
+
+
+        <!-- PROJECT 1 -->
+
+        <div class="glass project-card">
+
+            <span class="project-type">
+                Data Analytics
+            </span>
+
+            <h3>📊 Blinkit Sales Analysis</h3>
+
+            <p>
+                Analyzed grocery sales data to identify product,
+                outlet and customer-related trends. Built an
+                interactive Power BI dashboard and used SQL for
+                data analysis and business insights.
+            </p>
+
+            <div class="tags">
+
+                <span>SQL</span>
+                <span>Power BI</span>
+                <span>Excel</span>
+                <span>Data Analysis</span>
+
+            </div>
+
+            <div class="project-buttons">
+
+                <a class="project-btn"
+                   href="https://github.com/truptipawar941"
+                   target="_blank">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROJECT 2 -->
+
+        <div class="glass project-card">
+
+            <span class="project-type">
+                Data Analytics
+            </span>
+
+            <h3>📊 Amazon Sales Data Analysis</h3>
+
+            <p>
+                Analyzed Amazon sales data using Python, Pandas
+                and Power BI to identify sales trends, customer
+                behavior and business insights through
+                interactive visualizations.
+            </p>
+
+            <div class="tags">
+
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Power BI</span>
+                <span>Data Analysis</span>
+
+            </div>
+
+            <div class="project-buttons">
+
+                <a class="project-btn"
+                   href="https://github.com/truptipawar941/Data_analysis"
+                   target="_blank">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROJECT 3 -->
+
+        <div class="glass project-card">
+
+            <span class="project-type">
+                UI/UX Design
+            </span>
+
+            <h3>🎓 Student Career & Placement App</h3>
+
+            <p>
+                Designed a student-focused career and placement
+                application concept that helps students explore
+                career paths, build skills, prepare for interviews
+                and discover opportunities.
+            </p>
+
+            <div class="tags">
+
+                <span>Figma</span>
+                <span>UX Research</span>
+                <span>Wireframing</span>
+                <span>Prototype</span>
+                <span>UI Design</span>
+
+            </div>
+
+            <div class="project-buttons">
+
+                <!-- Replace with your actual Figma prototype link -->
+
+                <a class="project-btn"
+                   href="#"
+                   target="_blank">
+                    🎨 Prototype
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROJECT 4 -->
+
+        <div class="glass project-card">
+
+            <span class="project-type">
+                UI/UX Case Study
+            </span>
+
+            <h3>🚗 Smart Parking UI/UX Case Study</h3>
+
+            <p>
+                Designed a complete Smart Parking experience
+                covering user research, personas, user flows,
+                wireframes, high-fidelity screens and interactive
+                prototypes.
+            </p>
+
+            <div class="tags">
+
+                <span>Figma</span>
+                <span>UI/UX</span>
+                <span>User Research</span>
+                <span>Wireframing</span>
+                <span>Prototype</span>
+
+            </div>
+
+            <div class="project-buttons">
+
+                <a class="project-btn"
+                   href="https://github.com/truptipawar941/smart-parking-system-web"
+                   target="_blank">
+                    📖 Case Study
+                </a>
+
+                <a class="project-btn secondary"
+                   href="https://www.figma.com/proto/rKIDJAYkOHCVv5v7977yBl/Untitled?node-id=1-2"
+                   target="_blank">
+                    🎨 Prototype
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROJECT 5 -->
+
+        <div class="glass project-card">
+
+            <span class="project-type">
+                UI/UX Design
+            </span>
+
+            <h3>🍔 Food App UI/UX Design</h3>
+
+            <p>
+                Designed a modern food ordering mobile application
+                in Figma with user flows, wireframes, high-fidelity
+                screens and an interactive prototype.
+            </p>
+
+            <div class="tags">
+
+                <span>Figma</span>
+                <span>UI/UX</span>
+                <span>Mobile App</span>
+                <span>Prototype</span>
+
+            </div>
+
+            <div class="project-buttons">
+
+                <a class="project-btn"
+                   href="https://www.figma.com/proto/edhZSZqZFdHsy5tlZIQKxB/Untitled?node-id=2-19"
+                   target="_blank">
+                    🎨 View Prototype
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROJECT 6 -->
+
+        <div class="glass project-card">
+
+            <span class="project-type">
+                IoT + Web Development
+            </span>
+
+            <h3>🚗 Smart Vehicle Parking System</h3>
+
+            <p>
+                Developed an IoT-based smart parking system with
+                real-time parking slot monitoring and Firebase
+                integration. The system displays live parking
+                availability through a web dashboard.
+            </p>
+
+            <div class="tags">
+
+                <span>ESP32</span>
+                <span>Firebase</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+
+            </div>
+
+            <div class="project-buttons">
+
+                <a class="project-btn"
+                   href="https://github.com/truptipawar941/smart-vehicle-parking-system"
+                   target="_blank">
+                    GitHub
+                </a>
+
+                <a class="project-btn secondary"
+                   href="https://smartparking-1803.web.app"
+                   target="_blank">
+                    Live Demo
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= CERTIFICATES ================= -->
+
+<section id="certificates">
+
+    <h2 class="section-title">Certificates</h2>
+
+    <div class="certificate-grid">
+
+
+        <!-- UI UX -->
+
+        <div class="glass certificate-card">
+
+            <h3>🎨 UI/UX Design Assessment</h3>
+
+            <img src="./uiux-certificate.jpg"
+                 class="certificate-img"
+                 alt="UI UX Certificate">
+
+            <p>
+                Successfully completed UI/UX Design Assessment.
+                Score: <strong>45 / 50</strong>
+            </p>
+
+            <a href="./uiux-certificate.jpg"
+               target="_blank"
+               class="btn">
+                View Certificate
+            </a>
+
+        </div>
+
+
+        <!-- PYTHON -->
+
+        <div class="glass certificate-card">
+
+            <h3>🐍 Python Workshop</h3>
+
+            <img src="./python-certificate.jpg"
+                 class="certificate-img"
+                 alt="Python Certificate">
+
+            <p>
+                Successfully completed a Python Workshop
+                conducted by DV Analytics.
+            </p>
+
+            <a href="./python-certificate.jpg"
+               target="_blank"
+               class="btn">
+                View Certificate
+            </a>
+
+        </div>
+
+
+        <!-- SQL -->
+
+        <div class="glass certificate-card">
+
+            <h3>🗄️ SQL Certification</h3>
+
+            <img src="./sql-certificate.jpg"
+                 class="certificate-img"
+                 alt="SQL Certificate">
+
+            <p>
+                Covered SQL fundamentals, filtering,
+                grouping, joins, aggregate functions
+                and subqueries.
+            </p>
+
+            <a href="./sql-certificate.pdf"
+               target="_blank"
+               class="btn">
+                View Certificate
+            </a>
+
+        </div>
+
+
+        <!-- EXCEL -->
+
+        <div class="glass certificate-card">
+
+            <h3>📊 Excel Certification</h3>
+
+            <img src="./excel-certificate.jpg"
+                 class="certificate-img"
+                 alt="Excel Certificate">
+
+            <p>
+                Covered Excel formulas, functions,
+                VLOOKUP, Pivot Tables and Charts.
+            </p>
+
+            <a href="./excel-certificate.pdf"
+               target="_blank"
+               class="btn">
+                View Certificate
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section id="achievements">
+
+    <h2 class="section-title">Achievements</h2>
+
+    <div class="achievement-grid">
+
+
+        <div class="glass achievement-card">
+
+            <div class="achievement-icon">🏆</div>
+
+            <h3>Code Battle Winner</h3>
+
+            <p>
+                Won a college-level Code Battle competition
+                demonstrating programming and problem-solving skills.
+            </p>
+
+        </div>
+
+
+        <div class="glass achievement-card">
+
+            <div class="achievement-icon">🎨</div>
+
+            <h3>UI/UX Competition</h3>
+
+            <p>
+                Participated in a UI/UX design competition
+                at Bharati Vidyapeeth, Solapur.
+            </p>
+
+        </div>
+
+
+        <div class="glass achievement-card">
+
+            <div class="achievement-icon">💡</div>
+
+            <h3>Hackathon & Idea Projects</h3>
+
+            <p>
+                Participated in college-level innovation,
+                hackathon and idea submission activities.
+            </p>
+
+        </div>
+
+
+        <div class="glass achievement-card">
+
+            <div class="achievement-icon">🚗</div>
+
+            <h3>Smart Parking Project</h3>
+
+            <p>
+                Developed an IoT-based Smart Vehicle Parking
+                System using ESP32 and Firebase.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= RESUME ================= -->
 
 <section id="resume">
 
@@ -330,405 +1317,186 @@ footer{
 
     <div class="resume-grid">
 
-        <div class="glass resume-card">
 
-            <h3>📡 IoT Resume</h3>
-
-            <p>
-                Focused on IoT systems, Firebase integration and smart automation projects.
-            </p>
-
-            <ul>
-                <li>Smart Vehicle Parking System</li>
-                <li>Firebase Realtime Database</li>
-                <li>IoT Based Solutions</li>
-            </ul>
-
-            <a href="./iot_resume.pdf" target="_blank" class="btn">
-    View IoT Resume
-</a>
-        
-
-        </div>
+        <!-- DATA ANALYST -->
 
         <div class="glass resume-card">
 
-            <h3>💻 Web + Data Analysis Resume</h3>
+            <h3>📊 Data Analyst Resume</h3>
 
             <p>
-                Focused on Web Development, Python, Power BI and Data Analytics.
+                Focused on SQL, Excel, Power BI, Python and
+                data analytics projects.
             </p>
 
             <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Amazon Sales Analysis</li>
+
+                <li>SQL & MySQL</li>
+                <li>Excel & Data Cleaning</li>
                 <li>Power BI Dashboards</li>
+                <li>Python & Pandas</li>
+                <li>Blinkit & Amazon Sales Analysis</li>
+
             </ul>
 
-           <a href="./web_data_resume.pdf"
-   target="_blank"
-   class="btn">
-   View Web + Data Resume
-</a>
+            <a href="./web_data_resume.pdf"
+               target="_blank"
+               class="btn">
+                View Data Analyst Resume
+            </a>
+
         </div>
+
+
+        <!-- UI UX -->
+
+        <div class="glass resume-card">
+
+            <h3>🎨 UI/UX Designer Resume</h3>
+
+            <p>
+                Focused on Figma, user research, wireframing,
+                prototyping and user-centered design.
+            </p>
+
+            <ul>
+
+                <li>Figma & UI Design</li>
+                <li>User Research</li>
+                <li>Wireframing</li>
+                <li>Prototyping</li>
+                <li>UI/UX Case Studies</li>
+
+            </ul>
+
+            <a href="./web_data_resume.pdf"
+               target="_blank"
+               class="btn">
+                View UI/UX Resume
+            </a>
+
+        </div>
+
 
     </div>
 
 </section>
 
-<section id="skills">
 
-    <h2 class="section-title">Skills</h2>
+<!-- ================= CONTACT ================= -->
 
-    <div class="skills">
-
-        <span>IoT</span>
-        <span>Firebase</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Python</span>
-        <span>Power BI</span>
-        <span>Data Analysis</span>
-        <span>Java</span>
-        <span>Git & GitHub</span>
-        <span>Figma</span>
-        <span>Wireframing</span>
-        <span>Prototyping</span>
-        <span>User Research</span>
-        <span>Design Thinking</span>
-
-        <span>SQL</span>
-
-        <span>Excel</span> 
-
-    </div>
-
-
-</section>
-<p style="text-align:center;color:#cbd5e1;margin-bottom:30px;">
-A collection of my UI/UX, IoT, Web Development, and Data Analytics projects.
-</p>
-
-<section id="projects">
-
-<h2 class="section-title">Featured Projects</h2>
-
-<div class="project-grid">
-
-    <!-- Project 1 -->
-
-    <div class="glass project-card">
-
-        <h3>🚗 Smart Vehicle Parking System</h3>
-
-        <p>
-            Developed an IoT-based Smart Parking System with Firebase integration for real-time parking slot monitoring and management. The system provides live parking availability updates through a web dashboard.
-        </p>
-
-        <div class="tags">
-            <span>IoT</span>
-            <span>Firebase</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-        </div>
-
-        <a class="project-btn"
-           href="https://github.com/truptipawar941/smart-vehicle-parking-system"
-           target="_blank">
-           GitHub
-        </a>
-
-        <a class="project-btn"
-           href="https://smartparking-1803.web.app"
-           target="_blank">
-           Live Demo
-        </a>
-
-    </div>
-
-    <!-- Project 2 -->
-
-    <div class="glass project-card">
-
-        <h3>🎨 Smart Parking UI/UX Case Study</h3>
-
-        <p>
-            Designed a complete UI/UX solution for a Smart Parking System, including user research, user personas, user flows, wireframes, high-fidelity screens, and interactive prototypes focused on improving user experience.
-        </p>
-
-        <div class="tags">
-            <span>Figma</span>
-            <span>UI/UX</span>
-            <span>Case Study</span>
-            <span>Wireframing</span>
-            <span>Prototyping</span>
-        </div>
-
-        <a class="project-btn"
-           href="https://github.com/truptipawar941/smart-parking-system-web.git"
-           target="_blank">
-           📖 Case Study
-        </a>
-
-        <a class="project-btn"
-           href="https://www.figma.com/proto/rKIDJAYkOHCVv5v7977yBl/Untitled?node-id=1-2&p=f&t=uJJFQUBApx2dGSQa-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
-           target="_blank">
-           🎨 Prototype
-        </a>
-
-    </div>
-
-    <!-- Project 3 -->
-
-    <div class="glass project-card">
-
-        <h3>🍔 Food App UI/UX Design</h3>
-
-        <p>
-            Designed a modern food ordering mobile application in Figma, including user flows, wireframes, high-fidelity screens, and interactive prototypes focused on creating a seamless user experience.
-        </p>
-
-        <div class="tags">
-            <span>Figma</span>
-            <span>UI/UX</span>
-            <span>Mobile App</span>
-            <span>Prototype</span>
-        </div>
-
-        <a class="project-btn"
-           href="https://www.figma.com/proto/edhZSZqZFdHsy5tlZIQKxB/Untitled?node-id=2-19&p=f&t=6mptPhp1imkZKdEu-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A19 new fima link"
-           target="_blank">
-           🎨 View Prototype
-        </a>
-
-    </div>
-
-    <!-- Project 4 -->
-
-    <div class="glass project-card">
-
-        <h3>📊 Amazon Sales Data Analysis</h3>
-
-        <p>
-            Analyzed Amazon sales data using Python, Pandas, and Power BI to identify sales trends, customer behavior, and business insights through interactive visualizations and dashboards.
-        </p>
-
-        <div class="tags">
-            <span>Python</span>
-            <span>Pandas</span>
-            <span>Power BI</span>
-            <span>Data Analysis</span>
-        </div>
-
-        <a class="project-btn"
-           href="https://github.com/truptipawar941/Data_analysis"
-           target="_blank">
-           GitHub
-        </a>
-
-    </div>
-
-</div>
-
-</section>
-
-
-
-<h2 class="section-title">Certificates</h2>
-
-
-<div class="glass">
-
-<h3>🎨 UI/UX Design Assessment</h3>
-
-<img src="uiux-certificate.jpg"
-class="certificate-img"
-alt="UI UX Certificate">
-
-<p>Successfully completed UI/UX Design Assessment.</p>
-
-<p>
-Score:
-<strong>45 / 50</strong>
-</p>
-
-<a href="uiux-certificate.jpg"
-target="_blank"
-class="btn">
-View Certificate
-</a>
-
-</div>
-
-<div class="glass">
-
-<h3>🐍 Python Workshop</h3>
-
-<img src="python-certificate.jpg"
-class="certificate-img"
-alt="Python Certificate">
-
-<p>
-Successfully completed Python Workshop conducted by DV Analytics.
-</p>
-
-<a href="python-certificate.jpg"
-target="_blank"
-class="btn">
-View Certificate
-</a>
-
-</div>
-    <div class="glass">
-
-<h3>🗄️ SQL Certification</h3>
-
-<img src="sql-certificate.jpg"
-class="certificate-img"
-alt="SQL Certificate">
-
-<p>
-Successfully completed SQL Certification covering database fundamentals,
-SELECT, WHERE, ORDER BY, GROUP BY, JOINS, Aggregate Functions and Subqueries.
-</p>
-
-<a href="sql-certificate.pdf"
-target="_blank"
-class="btn">
-View Certificate
-</a>
-
-</div>
-    <div class="glass">
-
-<h3>🗄️ Excel Certification</h3>
-
-<img src="excel-certificate.jpg"
-class="certificate-img"
-alt="Excel Certificate">
-
-<p>
-Successfully completed Excel Certification covering database fundamentals,
-sum,Average,Count,Max,Min, Pivot table,chart,VLOOKUP
-</p>
-
-<a href="excel-certificate.pdf"
-target="_blank"
-class="btn">
-View Certificate
-</a>
-
-</div>
-
-
-</section>
-
-<!-- Achievements Section -->
-
-<section id="achievements">
-
-    <h2 class="section-title">Achievements</h2>
-
-    <div class="glass">
-
-        <ul>
-            <li>🏆 Participated in UI/UX Design Competition at College Level</li>
-            <li>🚗 Developed Smart Vehicle Parking System using IoT and Firebase</li>
-            <li>📊 Built Data Analysis Projects using Python and Power BI</li>
-        </ul>
-
-    </div>
-
-</section>
 <section id="contact">
 
-    <h2 class="section-title">Contact</h2>
+    <h2 class="section-title">Let's Connect</h2>
 
     <div class="glass contact-box">
 
-        <p>📧 Email:
+        <p>
+            📧 Email:
             <a href="mailto:truptipawar302@gmail.com">
                 truptipawar302@gmail.com
             </a>
         </p>
 
-        <p>📱 Phone:
+        <p>
+            📱 Phone:
             <a href="tel:+917498875709">
                 +91 7498875709
             </a>
         </p>
 
-        <p>💻 GitHub:
-            <a href="https://github.com/truptipawar941" target="_blank">
-                github.com/truptipawar941
-            </a>
-        </p>
+        <div class="social-links">
 
-        <p>🔗 LinkedIn:
-            <a href="https://linkedin.com/in/trupti-pawar-5315b4404" target="_blank">
-                linkedin.com/in/trupti-pawar-5315b4404
+            <a href="https://github.com/truptipawar941"
+               target="_blank"
+               class="btn-outline">
+                GitHub
             </a>
-        </p>
+
+            <a href="https://linkedin.com/in/trupti-pawar-5315b4404"
+               target="_blank"
+               class="btn-outline">
+                LinkedIn
+            </a>
+
+        </div>
 
     </div>
 
 </section>
 
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
-    © 2026 Trupti Pawar | Portfolio
+
+    © 2026 Trupti Pawar | Data Analyst & UI/UX Designer
+
 </footer>
 
+
+<!-- ================= TYPING EFFECT ================= -->
+
 <script>
-const roles = [
-    "UI/UX Designer",
-    "UI/UX Design Intern",
-    "Web Developer",
-    "Data Analyst"
-];
 
-let roleIndex = 0;
-let charIndex = 0;
-let deleting = false;
+    const roles = [
+        "Data Analyst",
+        "UI/UX Designer",
+        "Data Visualization Enthusiast",
+        "Product Designer"
+    ];
 
-function typeEffect() {
+    let roleIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
 
-    const currentRole = roles[roleIndex];
-    const typing = document.getElementById("typing");
+    function typeEffect() {
 
-    if(!deleting){
-        typing.textContent =
-        currentRole.substring(0,charIndex+1);
+        const currentRole = roles[roleIndex];
+        const typing = document.getElementById("typing");
 
-        charIndex++;
+        if (!deleting) {
 
-        if(charIndex === currentRole.length){
-            deleting = true;
+            typing.textContent =
+                currentRole.substring(0, charIndex + 1);
 
-            setTimeout(typeEffect,1500);
-            return;
+            charIndex++;
+
+            if (charIndex === currentRole.length) {
+
+                deleting = true;
+
+                setTimeout(typeEffect, 1500);
+
+                return;
+            }
+
+        } else {
+
+            typing.textContent =
+                currentRole.substring(0, charIndex - 1);
+
+            charIndex--;
+
+            if (charIndex === 0) {
+
+                deleting = false;
+
+                roleIndex =
+                    (roleIndex + 1) % roles.length;
+            }
         }
 
-    }else{
-
-        typing.textContent =
-        currentRole.substring(0,charIndex-1);
-
-        charIndex--;
-
-        if(charIndex === 0){
-            deleting = false;
-            roleIndex =
-            (roleIndex + 1) % roles.length;
-        }
+        setTimeout(
+            typeEffect,
+            deleting ? 60 : 120
+        );
     }
 
-    setTimeout(typeEffect, deleting ? 60 : 120);
-}
+    typeEffect();
 
-typeEffect();
 </script>
 
 </body>
 </html>
+```
